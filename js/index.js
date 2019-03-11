@@ -41,10 +41,17 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
+const header = document.getElementsByTagName('header');
+const navLinks = header[0].getElementsByTagName('a');
+navLinks[0].textContent = 'Services';
+navLinks[1].textContent = 'Product';
+navLinks[2].textContent = 'Vision';
+navLinks[3].textContent = 'Features';
+navLinks[4].textContent = 'About';
+navLinks[5].textContent = 'Contact';
 
-
-const headerOne = document.querySelector('h1');
-headerOne.textContent = 'Dom is Awesome';
+const header1 = document.querySelector('h1');
+header1.textContent = 'Dom is Awesome';
 
 const button = document.querySelector('button');
 button.textContent = 'Get Started';
@@ -54,4 +61,7 @@ topImg.src = 'img/header-img.png';
 
 const midImg = document.getElementById('middle-img');
 midImg.src = 'img/mid-page-accent.jpg';
+
+const header4 = document.querySelector('h4');
+header4.textContent = 'Features';
 
